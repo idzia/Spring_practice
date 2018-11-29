@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="style.css"  />
+
+</head>
+<body>
+    <h1>Spring Boot Calculator</h1>
+
+
+    <form action="#" th:action="@{/calc}" th:object="${calculator}" method="post" >
+
+        <p><input type="text" th:field="*{num1}" placeholder="first number"></p>
+
+        <p><input type="text" th:field="*{num2}" placeholder="secound number"></p>
+
+        <p><input type="text" th:field="*{operator}" placeholder="+, -, *, /"></p>
+
+        <p><input id="submit" type="submit" value="SUBMIT" >        <input type="reset" value="Reset" /></p>
+
+    </form>
+
+
+</body>
+</html>

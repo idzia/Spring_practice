@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CalculatorResult</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>RESULT</h1>
+    <p th:text="'result: ' + ${calculator.getNum1()} + ${calculator.getOperator()} + ${calculator.getNum2()} + ' = '+ ${bcs.calculeteResult()}" />
+    <p><a href="/calc">NEXT</a>
+</body>
+</html>
